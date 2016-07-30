@@ -43,7 +43,7 @@ struct VectorRectangle : VectorObject
 		lines.emplace_back(Line{Point{x, y}, Point{x + width ,y}});
 		lines.emplace_back(Line{Point{x, y}, Point{x, y + height}});
 		lines.emplace_back(Line{Point{x + width, y}, Point{x + width, y + height }});
-		lines.emplace_back(Line{Point{x,y + height} , Point{ x + width, y + height } });
+		lines.emplace_back(Line{Point{x,y + height}, Point{x + width, y + height }});
 	}
 
 	~VectorRectangle() override { }
@@ -60,5 +60,4 @@ struct VectorRectangle : VectorObject
 
 private:
 	std::vector<Line> lines; 
-
 };

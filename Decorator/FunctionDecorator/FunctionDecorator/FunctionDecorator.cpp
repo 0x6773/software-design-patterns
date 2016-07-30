@@ -9,7 +9,6 @@ struct Logger
 	function<void()> func;
 	string name;
 
-
 	Logger(const function<void()>& func, const string& name)
 		: func(func),
 		  name(name)
@@ -29,7 +28,6 @@ struct Logger2
 {
 	Func func;
 	string name;
-
 
 	Logger2(Func func, const string& name)
 		: func(func),

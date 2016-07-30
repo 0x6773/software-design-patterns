@@ -34,7 +34,6 @@ struct ColouredShape : Shape
 	Shape& shape;
 	string color;
 
-
 	ColouredShape(Shape& shape, const string& color)
 		: shape(shape),
 		  color(color)
@@ -67,7 +66,7 @@ struct TransparentShape : Shape
 		ostringstream oss;
 		oss << shape.str() << " has " 
 			<< static_cast<float>(transparency) / 255.f * 100.f
-			<< " % tranpanrency";
+			<< " % transparency";
 		return oss.str();
 	}
 	~TransparentShape() override { }
